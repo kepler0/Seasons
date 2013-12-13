@@ -1,5 +1,7 @@
 package k2b6s9j.Seasons.seasons
 
-class Spring {
+import k2b6s9j.Seasons.traits.Season
+
+class Spring extends Season {
 
 }
