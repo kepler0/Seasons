@@ -5,7 +5,7 @@ import cpw.mods.fml.common.FMLLog
 
 object Log {
 
-  def log: Logger = Logger.getLogger("BoatCraft")
+  def log: Logger = Logger.getLogger("Seasons")
 
   def info(msg:String) {
     log.setParent(FMLLog.getLogger)

@@ -14,7 +14,7 @@ object Seasons {
     Log.info("Seasons")
     Log.info("Copyright Kepler Sticka-Jones 2013")
 
-    Log.info("Currently test the month of December globally.")
+    Log.info("Currently testing the month of December globally.")
     December.setWeather
 
   }
