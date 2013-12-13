@@ -18,11 +18,11 @@ trait Season {
   }
 
   def canSnow: Boolean = {
-    _
+    false
   }
 
   def canRain: Boolean = {
-    _
+    false
   }
 
 }
