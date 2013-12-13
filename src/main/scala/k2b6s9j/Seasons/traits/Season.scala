@@ -13,6 +13,7 @@ trait Season {
         if (canSnow) {
           biome.setEnableSnow()
         }
+        biome.setTemperatureRainfall(rainTemp, rainTemp)
       }
     }
   }
@@ -23,6 +24,10 @@ trait Season {
 
   def canRain: Boolean = {
     false
+  }
+
+  def rainTemp: Float = {
+    1F
   }
 
 }
