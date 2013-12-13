@@ -25,3 +25,10 @@ out
 *.iml
 *.ipr
 *.iws
+
+# minecraft
+*.log*
+*.cfg
+/saves
+/mods
+/stats
