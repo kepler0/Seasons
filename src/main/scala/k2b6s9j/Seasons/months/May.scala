@@ -5,4 +5,8 @@ import k2b6s9j.Seasons.traits.seasons.Spring
 
 class May extends Month with Spring {
 
+  override def daysInMonth: Int = {
+    31
+  }
+
 }

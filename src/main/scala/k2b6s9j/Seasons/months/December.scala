@@ -5,4 +5,8 @@ import k2b6s9j.Seasons.seasons.Winter
 
 class December extends Month with Winter {
 
+  override def daysInMonth: Int = {
+    31
+  }
+
 }

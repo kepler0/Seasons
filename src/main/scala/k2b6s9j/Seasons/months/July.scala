@@ -5,4 +5,8 @@ import k2b6s9j.Seasons.traits.seasons.Summer
 
 class July extends Month with Summer {
 
+  override def daysInMonth: Int = {
+    31
+  }
+
 }

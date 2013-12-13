@@ -5,4 +5,8 @@ import k2b6s9j.Seasons.traits.seasons.Autumn
 
 class October extends Month with Autumn {
 
+  override def daysInMonth: Int = {
+    31
+  }
+
 }
