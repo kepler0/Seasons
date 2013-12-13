@@ -1,5 +1,8 @@
 package k2b6s9j.Seasons.months
 
-class March {
+import k2b6s9j.Seasons.seasons.Spring
+import k2b6s9j.Seasons.traits.Month
+
+class March extends Month with Spring {
 
 }

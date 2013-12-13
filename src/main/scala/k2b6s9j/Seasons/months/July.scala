@@ -1,5 +1,8 @@
 package k2b6s9j.Seasons.months
 
-class July {
+import k2b6s9j.Seasons.seasons.Summer
+import k2b6s9j.Seasons.traits.Month
+
+class July extends Month with Summer {
 
 }
