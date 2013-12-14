@@ -35,11 +35,19 @@ object Seasons {
 
 object SeasonalTickHandler extends ITickHandler {
 
+  override def tickStart (kind: util.EnumSet[TickType], data: AnyRef*) {}
+
   override def tickEnd(kind: util.EnumSet[TickType], data: AnyRef*) {
     if(kind.equals(util.EnumSet.of(TickType.SERVER)))
     {
       December.setWeather()
     }
   }
+
+  override def getLabel: String = {
+    "Seasonal TickHandler"
+  }
+
+  override def ticks(): java.util.EnumSet[cpw.mods.fml.common.TickType] = {}
 
 }
