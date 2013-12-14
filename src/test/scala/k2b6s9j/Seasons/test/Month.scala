@@ -12,8 +12,8 @@ class Month extends FlatSpec with Matchers {
     January.daysInMonth should be (31)
   }
 
-  it should "have a temperature" in {
-
+  it should "have a temperature of zero" in {
+    January.temperature should be (0.0F)
   }
 
   "February" should "have 28 days." in {
