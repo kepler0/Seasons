@@ -10,15 +10,11 @@ trait Season {
     for(biome: BiomeGenBase <- BiomeGenBase.biomeList) {
       if(biome != null) {
         if (!canRain) {
-          Log.info("Disabling Rain in biome " + biome.toString)
           biome.setDisableRain()
         }
         if (canSnow) {
-          Log.info("Enabling Snow in biome " + biome.toString)
           biome.setEnableSnow()
         }
-        Log.info("Setting temperature at float " + temperature.toString + " in biome " + biome.toString)
-        Log.info("Setting rain frequency at float " + rainFrequency.toString + " in biome " + biome.toString)
         biome.setTemperatureRainfall(biome.getFloatTemperature, rainFrequency)
       }
     }
