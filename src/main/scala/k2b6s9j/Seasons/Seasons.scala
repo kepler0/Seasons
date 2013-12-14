@@ -48,6 +48,8 @@ object SeasonalTickHandler extends ITickHandler {
     "Seasonal TickHandler"
   }
 
-  override def ticks(): java.util.EnumSet[cpw.mods.fml.common.TickType] = {}
+  override def ticks(): java.util.EnumSet[cpw.mods.fml.common.TickType] = {
+    util.EnumSet.of(TickType.SERVER)
+  }
 
 }
