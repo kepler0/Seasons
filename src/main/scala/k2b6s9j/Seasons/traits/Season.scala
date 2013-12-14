@@ -9,10 +9,6 @@ trait Season {
     for(biome: BiomeGenBase <- BiomeGenBase.biomeList) {
       if(biome != null) {
         if (!biomeBlacklisted(biome)) {
-          //Ok. Now that we've ran through the blacklist...
-          if (canSnow) {
-            biome.setDisableRain().setEnableSnow()
-          }
           biome.temperature = temperature
         }
       }
