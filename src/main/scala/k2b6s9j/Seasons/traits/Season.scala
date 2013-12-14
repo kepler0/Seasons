@@ -16,7 +16,7 @@ trait Season {
           Log.info("Enabling Snow in biome " + biome.toString)
           biome.setEnableSnow()
         }
-        Log.info("Setting rainfall at float " + rainTemp.toString)
+        Log.info("Setting rainfall at float " + rainTemp.toString + " in biome " + biome.toString)
         biome.setTemperatureRainfall(rainTemp, rainTemp)
       }
     }
