@@ -11,10 +11,12 @@ trait Season {
         if (BiomeDictionary.isBiomeOfType(biome, BiomeDictionary.Type.DESERT)) {
           biome.setDisableRain()
         }
-        if (canSnow) {
-          biome.setDisableRain().setEnableSnow()
+        else {
+          if (canSnow) {
+            biome.setDisableRain().setEnableSnow()
+          }
+          biome.temperature = temperature
         }
-        biome.temperature = temperature
       }
     }
   }
