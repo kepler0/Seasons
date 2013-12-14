@@ -10,7 +10,7 @@ trait Season {
         if (canSnow) {
           biome.setDisableRain().setEnableSnow()
         }
-        biome.setTemperatureRainfall(temperature, rainFrequency)
+        biome.temperature = temperature
       }
     }
   }
@@ -25,10 +25,6 @@ trait Season {
 
   def temperature: Float = {
     1.0F
-  }
-
-  def rainFrequency: Float = {
-    0.0F
   }
 
 }
