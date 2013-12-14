@@ -8,6 +8,9 @@ trait Season {
   def setWeather() {
     for(biome: BiomeGenBase <- BiomeGenBase.biomeList) {
       if(biome != null) {
+        if (BiomeDictionary.isBiomeOfType(biome, BiomeDictionary.Type.WATER)) {
+          //I would rather not freeze over the oceans
+        }
         if (BiomeDictionary.isBiomeOfType(biome, BiomeDictionary.Type.DESERT)) {
           biome.setDisableRain()
         }
