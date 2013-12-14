@@ -17,10 +17,17 @@ trait Season {
         if (BiomeDictionary.isBiomeOfType(biome, BiomeDictionary.Type.FROZEN)) {
           //And let's not melt any frozen biomes, they're frozen for a reason.
         }
+        if (BiomeDictionary.isBiomeOfType(biome, BiomeDictionary.Type.NETHER)) {
+          //Do not under any circumstances freeze over hell.
+        }
+        if (BiomeDictionary.isBiomeOfType(biome, BiomeDictionary.Type.END)) {
+          //I would rather not piss of those of the Ender realm.
+        }
         if (BiomeDictionary.isBiomeOfType(biome, BiomeDictionary.Type.MUSHROOM)) {
           //I will not touch the majestic mushroom biomes. Plus, they kinda scare me.
         }
         else {
+          //Ok. No that we've ran through the black list...
           if (canSnow) {
             biome.setDisableRain().setEnableSnow()
           }
