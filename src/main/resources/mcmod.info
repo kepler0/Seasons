@@ -1,0 +1,16 @@
+[
+{
+  "modid": "seasons",
+  "name": "Seasons",
+  "description": "Yes. Seasons. You read that right.",
+  "version": "ModJam",
+  "mcversion": "1.6.4",
+  "url": "http://www.k2b6s9j.com/",
+  "updateUrl": "",
+  "authors": ["k2b6s9j"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
