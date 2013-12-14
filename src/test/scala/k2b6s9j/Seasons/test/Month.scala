@@ -6,7 +6,7 @@ import org.junit.runner.RunWith
 import org.scalatest.junit.JUnitRunner
 
 @RunWith(classOf[JUnitRunner])
-object Month extends FlatSpec with Matchers {
+class Month extends FlatSpec with Matchers {
 
   "January" should "have 31 days." in {
     January.daysInMonth should be (31)
