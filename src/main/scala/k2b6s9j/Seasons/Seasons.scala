@@ -14,6 +14,9 @@ object Seasons {
     Log.info("Seasons")
     Log.info("Copyright Kepler Sticka-Jones 2013")
 
+    Log.info("Currently testing the month of December globally.")
+    December.setWeather()
+
   }
 
   @EventHandler
@@ -23,9 +26,6 @@ object Seasons {
 
   @EventHandler
   def postInit(event: FMLPostInitializationEvent) {
-
-    Log.info("Currently testing the month of December globally.")
-    December.setWeather()
 
   }
 
