@@ -9,4 +9,8 @@ object December extends Month with Winter {
     31
   }
 
+  override def rainFrequency: Float = {
+    0.5F
+  }
+
 }

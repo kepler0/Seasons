@@ -18,7 +18,7 @@ trait Season {
         }
         Log.info("Setting temperature at float " + temperature.toString + " in biome " + biome.toString)
         Log.info("Setting rain frequency at float " + rainFrequency.toString + " in biome " + biome.toString)
-        biome.setTemperatureRainfall(temperature, rainFrequency)
+        biome.setTemperatureRainfall(biome.getFloatTemperature, rainFrequency)
       }
     }
   }
