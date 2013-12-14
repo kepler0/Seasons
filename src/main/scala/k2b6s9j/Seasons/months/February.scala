@@ -10,7 +10,7 @@ object February extends Month with Winter {
   }
 
   override def temperature: Float = {
-    0.25F
+    0.15F
   }
 
 }
