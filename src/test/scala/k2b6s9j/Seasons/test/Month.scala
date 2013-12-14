@@ -12,7 +12,7 @@ class Month extends FlatSpec with Matchers {
     January.daysInMonth should be (31)
   }
 
-  it should "have a temperature of zero" in {
+  it should "have a temperature of zero." in {
     January.temperature should be (0.0F)
   }
 
@@ -20,7 +20,7 @@ class Month extends FlatSpec with Matchers {
     February.daysInMonth should be (28)
   }
 
-  it should "have a temperature of 0.15" in {
+  it should "have a temperature of 0.15." in {
     February.temperature should be (0.15F)
   }
 
@@ -28,7 +28,7 @@ class Month extends FlatSpec with Matchers {
     March.daysInMonth should be (31)
   }
 
-  it should "have a temperature of 0.75" in {
+  it should "have a temperature of 0.75." in {
     March.temperature should be (0.75F)
   }
 
@@ -36,7 +36,7 @@ class Month extends FlatSpec with Matchers {
     April.daysInMonth should be (30)
   }
 
-  it should "have a temperature of one" in {
+  it should "have a temperature of one." in {
     April.temperature should be (1.0F)
   }
 
@@ -44,7 +44,7 @@ class Month extends FlatSpec with Matchers {
     May.daysInMonth should be (31)
   }
 
-  it should "have a temperature of 1.25" in {
+  it should "have a temperature of 1.25." in {
     May.temperature should be (1.25F)
   }
 
@@ -52,7 +52,7 @@ class Month extends FlatSpec with Matchers {
     June.daysInMonth should be (30)
   }
 
-  it should "have a temperature of 1.75" in {
+  it should "have a temperature of 1.75." in {
     June.temperature should be (1.75F)
   }
 
@@ -60,7 +60,7 @@ class Month extends FlatSpec with Matchers {
     July.daysInMonth should be (31)
   }
 
-  it should "have a temperature of 2.0" in {
+  it should "have a temperature of 2.0." in {
     July.temperature should be (2.0F)
   }
 
@@ -68,7 +68,7 @@ class Month extends FlatSpec with Matchers {
     August.daysInMonth should be (31)
   }
 
-  it should "have a temperature of 1.75" in {
+  it should "have a temperature of 1.75." in {
     August.temperature should be (1.75F)
   }
 
@@ -76,7 +76,7 @@ class Month extends FlatSpec with Matchers {
     September.daysInMonth should be (30)
   }
 
-  it should "have a temperature of 1.25" in {
+  it should "have a temperature of 1.25." in {
     September.temperature should be (1.25F)
   }
 
@@ -84,7 +84,7 @@ class Month extends FlatSpec with Matchers {
     October.daysInMonth should be (31)
   }
 
-  it should "have a temperature of one" in {
+  it should "have a temperature of one." in {
     October.temperature should be (1.0F)
   }
 
@@ -92,7 +92,7 @@ class Month extends FlatSpec with Matchers {
     November.daysInMonth should be (30)
   }
 
-  it should "have a temperature of 0.75" in {
+  it should "have a temperature of 0.75." in {
     November.temperature should be (0.75F)
   }
 
@@ -100,7 +100,7 @@ class Month extends FlatSpec with Matchers {
     December.daysInMonth should be (31)
   }
 
-  it should "have a temperature of 0.15" in {
+  it should "have a temperature of 0.15." in {
     December.temperature should be (0.15F)
   }
 
