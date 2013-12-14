@@ -28,32 +28,32 @@ class Month extends FlatSpec with Matchers {
     March.daysInMonth should be (31)
   }
 
-  it should "have a temperature" in {
-    March.temperature
+  it should "have a temperature of 0.75" in {
+    March.temperature should be (0.75F)
   }
 
   "April" should "have 30 days." in {
     April.daysInMonth should be (30)
   }
 
-  it should "have a temperature" in {
-    April.temperature
+  it should "have a temperature of one" in {
+    April.temperature should be (1.0F)
   }
 
   "May" should "have 31 days." in {
     May.daysInMonth should be (31)
   }
 
-  it should "have a temperature" in {
-    May.temperature
+  it should "have a temperature of 1.25" in {
+    May.temperature should be (1.25F)
   }
 
   "June" should "have 30 days." in {
     June.daysInMonth should be (30)
   }
 
-  it should "have a temperature" in {
-    June.temperature
+  it should "have a temperature of 1.75" in {
+    June.temperature should be (1.75F)
   }
 
   "July" should "have 31 days." in {
@@ -68,32 +68,32 @@ class Month extends FlatSpec with Matchers {
     August.daysInMonth should be (31)
   }
 
-  it should "have a temperature" in {
-    August.temperature
+  it should "have a temperature of 1.75" in {
+    August.temperature should be (1.75F)
   }
 
   "September" should "have 30 days." in {
     September.daysInMonth should be (30)
   }
 
-  it should "have a temperature" in {
-    September.temperature
+  it should "have a temperature of 1.25" in {
+    September.temperature should be (1.25F)
   }
 
   "October" should "have 31 days." in {
     October.daysInMonth should be (31)
   }
 
-  it should "have a temperature" in {
-    October.temperature
+  it should "have a temperature of one" in {
+    October.temperature should be (1.0F)
   }
 
   "November" should "have 30 days." in {
     November.daysInMonth should be (30)
   }
 
-  it should "have a temperature" in {
-    November.temperature
+  it should "have a temperature of 0.75" in {
+    November.temperature should be (0.75F)
   }
 
   "December" should "have 31 days." in {
