@@ -2,7 +2,10 @@ package k2b6s9j.Seasons.test
 
 import org.scalatest._
 import k2b6s9j.Seasons.months._
+import org.junit.runner.RunWith
+import org.scalatest.junit.JUnitRunner
 
+@RunWith(classOf[JUnitRunner])
 object Month extends FlatSpec with Matchers {
 
   "January" should "have 31 days." in {
