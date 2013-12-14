@@ -1,8 +1,6 @@
 package k2b6s9j.Seasons.traits
 
 import net.minecraft.world.biome.BiomeGenBase
-import k2b6s9j.Seasons.Log
-import cpw.mods.fml.common.ITickHandler
 
 trait Season {
   
@@ -12,7 +10,7 @@ trait Season {
         if (canSnow) {
           biome.setDisableRain().setEnableSnow()
         }
-        biome.setTemperatureRainfall(biome.getFloatTemperature, rainFrequency)
+        biome.setTemperatureRainfall(temperature, rainFrequency)
       }
     }
   }
