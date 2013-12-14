@@ -25,7 +25,7 @@ object Seasons {
   def postInit(event: FMLPostInitializationEvent) {
 
     Log.info("Currently testing the month of December globally.")
-    December.setWeather
+    December.setWeather()
 
   }
 
