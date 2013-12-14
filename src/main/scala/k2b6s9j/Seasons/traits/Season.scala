@@ -9,7 +9,7 @@ trait Season {
     for(biome: BiomeGenBase <- BiomeGenBase.biomeList) {
       if(biome != null) {
         if (!biomeBlacklisted(biome)) {
-          //Ok. No that we've ran through the blacklist...
+          //Ok. Now that we've ran through the blacklist...
           if (canSnow) {
             biome.setDisableRain().setEnableSnow()
           }
@@ -42,9 +42,6 @@ trait Season {
     if (BiomeDictionary.isBiomeOfType(biome, BiomeDictionary.Type.MUSHROOM)) {
       //I will not touch the majestic mushroom biomes. Plus, they kinda scare me.
       true
-    }
-    else {
-      false
     }
   }
 
