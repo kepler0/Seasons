@@ -22,7 +22,7 @@ object Seasons {
   @EventHandler
   def Init(event: FMLInitializationEvent) {
 
-    TickRegistry.registerTickHandler(new SeasonalTickHandler.type, Side.SERVER)
+    TickRegistry.registerTickHandler(SeasonalTickHandler, Side.SERVER)
 
   }
 
