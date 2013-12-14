@@ -9,4 +9,8 @@ object May extends Month with Spring {
     31
   }
 
+  override def temperature: Float = {
+    1.25F
+  }
+
 }

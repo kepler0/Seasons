@@ -9,4 +9,8 @@ object September extends Month with Autumn {
     30
   }
 
+  override def temperature: Float = {
+    1.25F
+  }
+
 }

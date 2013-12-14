@@ -9,4 +9,8 @@ object January extends Month with Winter {
     31
   }
 
+  override def temperature: Float = {
+    0.0F
+  }
+
 }

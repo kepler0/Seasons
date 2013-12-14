@@ -9,4 +9,8 @@ object June extends Month with Summer {
     30
   }
 
+  override def temperature: Float = {
+    1.75F
+  }
+
 }
