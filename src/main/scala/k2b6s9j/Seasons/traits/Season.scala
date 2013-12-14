@@ -9,11 +9,8 @@ trait Season {
   def setWeather() {
     for(biome: BiomeGenBase <- BiomeGenBase.biomeList) {
       if(biome != null) {
-        if (!canRain) {
-          biome.setDisableRain()
-        }
         if (canSnow) {
-          biome.setEnableSnow()
+          biome.setDisableRain().setEnableSnow()
         }
         biome.setTemperatureRainfall(biome.getFloatTemperature, rainFrequency)
       }
