@@ -15,10 +15,6 @@ trait Season {
         biome.temperature = temperature
       }
     }
-    val ticks = MinecraftServer.getServer.worldServerForDimension(0).getWorldInfo.getWorldTotalTime
-    Log.info("Your world is " + ticks.toString  + " ticks old.")
-    val gameDays = ticks.toInt / 24000
-    Log.info("Your world is " + gameDays.toString + " Minecraft days old.")
   }
 
   def canSnow: Boolean = {
