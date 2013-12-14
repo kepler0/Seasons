@@ -16,8 +16,9 @@ trait Season {
           Log.info("Enabling Snow in biome " + biome.toString)
           biome.setEnableSnow()
         }
-        Log.info("Setting rainfall at float " + rainTemp.toString + " in biome " + biome.toString)
-        biome.setTemperatureRainfall(rainTemp, rainTemp)
+        Log.info("Setting temperature at float " + temperature.toString + " in biome " + biome.toString)
+        Log.info("Setting rain frequency at float " + rainFrequency.toString + " in biome " + biome.toString)
+        biome.setTemperatureRainfall(temperature, rainFrequency)
       }
     }
   }
@@ -30,8 +31,12 @@ trait Season {
     false
   }
 
-  def rainTemp: Float = {
-    1F
+  def temperature: Float = {
+    1.0F
+  }
+
+  def rainFrequency: Float = {
+    0.0F
   }
 
 }
