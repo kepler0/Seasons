@@ -1,8 +1,6 @@
 package k2b6s9j.Seasons.traits
 
 import net.minecraft.world.biome.BiomeGenBase
-import k2b6s9j.Seasons.Log
-import net.minecraft.server.MinecraftServer
 
 trait Season {
   
