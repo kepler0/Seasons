@@ -1,6 +1,8 @@
 package k2b6s9j.Seasons.traits
 
 import net.minecraft.world.biome.BiomeGenBase
+import k2b6s9j.Seasons.Log
+import net.minecraft.server.MinecraftServer
 
 trait Season {
   
@@ -13,6 +15,7 @@ trait Season {
         biome.temperature = temperature
       }
     }
+    Log.info("Your world is " + MinecraftServer.getServer.worldServerForDimension(0).getWorldInfo.getWorldTotalTime.toString)
   }
 
   def canSnow: Boolean = {

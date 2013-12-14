@@ -7,6 +7,9 @@ import cpw.mods.fml.common.registry.TickRegistry
 import cpw.mods.fml.relauncher.Side
 import java.util
 import k2b6s9j.Seasons.months.December
+import net.minecraft.server.MinecraftServer
+import net.minecraft.world.WorldServer
+import net.minecraft.world.storage.WorldInfo
 
 @Mod(name = "Seasons", modid = "seasons", version = "ModJam", modLanguage = "scala")
 object Seasons {
