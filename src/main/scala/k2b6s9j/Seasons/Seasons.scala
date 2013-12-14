@@ -3,7 +3,8 @@ package k2b6s9j.Seasons
 import cpw.mods.fml.common.{ITickHandler, Mod}
 import cpw.mods.fml.common.Mod.EventHandler
 import cpw.mods.fml.common.event.{FMLInitializationEvent, FMLPostInitializationEvent, FMLPreInitializationEvent}
-import k2b6s9j.Seasons.months.December
+import cpw.mods.fml.common.registry.TickRegistry
+import cpw.mods.fml.relauncher.Side
 
 @Mod(name = "Seasons", modid = "seasons", version = "ModJam", modLanguage = "scala")
 object Seasons {
@@ -19,10 +20,12 @@ object Seasons {
   @EventHandler
   def Init(event: FMLInitializationEvent) {
 
+    TickRegistry.registerTickHandler(new SeasonalTickHandler.type, Side.SERVER)
+
   }
 
   @EventHandler
-  def postInit(event: FMLPostInitializationEvent) {\
+  def postInit(event: FMLPostInitializationEvent) {
 
   }
 
