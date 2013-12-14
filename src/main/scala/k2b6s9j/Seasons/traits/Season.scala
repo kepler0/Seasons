@@ -14,6 +14,9 @@ trait Season {
         if (BiomeDictionary.isBiomeOfType(biome, BiomeDictionary.Type.DESERT)) {
           biome.setDisableRain()
         }
+        if (BiomeDictionary.isBiomeOfType(biome, BiomeDictionary.Type.FROZEN)) {
+          //And let's not melt any frozen biomes, they're frozen for a reason.
+        }
         if (BiomeDictionary.isBiomeOfType(biome, BiomeDictionary.Type.MUSHROOM)) {
           //I will not touch the majestic mushroom biomes. Plus, they kinda scare me.
         }
