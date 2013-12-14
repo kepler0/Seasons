@@ -1,6 +1,6 @@
 package k2b6s9j.Seasons
 
-import cpw.mods.fml.common.Mod
+import cpw.mods.fml.common.{ITickHandler, Mod}
 import cpw.mods.fml.common.Mod.EventHandler
 import cpw.mods.fml.common.event.{FMLInitializationEvent, FMLPostInitializationEvent, FMLPreInitializationEvent}
 import k2b6s9j.Seasons.months.December
@@ -22,11 +22,12 @@ object Seasons {
   }
 
   @EventHandler
-  def postInit(event: FMLPostInitializationEvent) {
-
-    Log.info("Currently testing the month of December globally.")
-    December.setWeather()
+  def postInit(event: FMLPostInitializationEvent) {\
 
   }
+
+}
+
+object SeasonalTickHandler extends ITickHandler {
 
 }
