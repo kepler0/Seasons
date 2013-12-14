@@ -43,6 +43,9 @@ trait Season {
       //I will not touch the majestic mushroom biomes. Plus, they kinda scare me.
       true
     }
+    else {
+      false
+    }
   }
 
   def canSnow: Boolean = {
