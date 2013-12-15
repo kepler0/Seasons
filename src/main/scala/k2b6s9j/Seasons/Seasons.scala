@@ -39,7 +39,8 @@ object Seasons {
 object SeasonalTickHandler extends ITickHandler {
 
   override def tickStart (kind: util.EnumSet[TickType], data: AnyRef*) {
-    MinecraftServer.getServer()
+    val time: Long = MinecraftServer.getServer().worldServers(0).getTotalWorldTime
+    Log.info(time.toString)
   }
 
   override def tickEnd(kind: util.EnumSet[TickType], data: AnyRef*) {
