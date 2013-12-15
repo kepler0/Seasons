@@ -7,9 +7,9 @@ import org.scalatest.junit.JUnitRunner
 import k2b6s9j.Seasons.traits.Month
 
 @RunWith(classOf[JUnitRunner])
-abstract class MonthTest extends FlatSpec with Matchers {
+class MonthTest extends FlatSpec with Matchers {
 
-  def traitMonth: Month
+  def traitMonth: Month = traitMonth
 
   "The Trait Month" should "have no days" in {
     traitMonth.daysInMonth should be (0)
