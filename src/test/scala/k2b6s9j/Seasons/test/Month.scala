@@ -15,6 +15,10 @@ class MonthTest extends FlatSpec with Matchers {
     traitMonth.daysInMonth should be (0)
   }
 
+  it should "last zero ticks." in {
+    January.ticksInMonth should be (0)
+  }
+
   "January" should "have 31 days." in {
     January.daysInMonth should be (31)
   }
