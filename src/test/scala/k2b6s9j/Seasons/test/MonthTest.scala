@@ -7,7 +7,7 @@ import org.scalatest.junit.JUnitRunner
 import k2b6s9j.Seasons.traits.Month
 
 @RunWith(classOf[JUnitRunner])
-class MonthTest extends FlatSpec with Matchers {
+abstract class MonthTest extends FlatSpec with Matchers {
 
   def traitMonth: Month
 
