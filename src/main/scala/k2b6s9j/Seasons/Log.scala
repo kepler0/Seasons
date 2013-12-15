@@ -22,7 +22,7 @@ object Log {
     log.log(Level.SEVERE, msg)
   }
 
-  def getLogger(): Logger =  {
+  def getLogger()  {
     log.setParent(FMLLog.getLogger)
     log
   }
