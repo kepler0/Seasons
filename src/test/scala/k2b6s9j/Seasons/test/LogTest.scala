@@ -7,7 +7,7 @@ import k2b6s9j.Seasons.Log
 import java.util.logging.Logger
 
 @RunWith(classOf[JUnitRunner])
-class Log extends FlatSpec with Matchers {
+class LogTest extends FlatSpec with Matchers {
 
   "The Mod Logger" should "return a logger." in {
     Log.getLogger() should be (Logger)
