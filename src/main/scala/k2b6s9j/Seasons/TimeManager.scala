@@ -11,7 +11,7 @@ object TimeManager {
 
   def findMonth(totalTicks: Int): Month = {
     if(totalTicks > ticksInYear()) {
-
+      null
     }
     else {
       val month:Int = totalTicks/ticksInYear()
@@ -24,6 +24,7 @@ object TimeManager {
         January
       }
       */
+      January
     }
   }
 
