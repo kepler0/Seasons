@@ -10,7 +10,7 @@ import java.util.logging.Logger
 class LogTest extends FlatSpec with Matchers {
 
   "The Mod Logger" should "return a logger." in {
-    Log.getLogger() should be (Logger)
+    Log.getLogger() shouldBe a [Logger]
   }
 
 }
