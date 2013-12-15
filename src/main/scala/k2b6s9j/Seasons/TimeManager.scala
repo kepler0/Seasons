@@ -14,7 +14,16 @@ object TimeManager {
 
     }
     else {
+      val month:Int = totalTicks/ticksInYear()
+      Log.info(month.toString)
+      /*
+      if (checkDivisibility(totalTicks, 2)) {
 
+      }
+      else {
+        January
+      }
+      */
     }
   }
 
