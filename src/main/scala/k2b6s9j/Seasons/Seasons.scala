@@ -38,7 +38,9 @@ object Seasons {
 
 object SeasonalTickHandler extends ITickHandler {
 
-  override def tickStart (kind: util.EnumSet[TickType], data: AnyRef*) {}
+  override def tickStart (kind: util.EnumSet[TickType], data: AnyRef*) {
+    MinecraftServer.getServer()
+  }
 
   override def tickEnd(kind: util.EnumSet[TickType], data: AnyRef*) {
     if(kind.equals(util.EnumSet.of(TickType.SERVER)))
