@@ -29,11 +29,6 @@ object Seasons {
 
   }
 
-  @EventHandler
-  def postInit(event: FMLPostInitializationEvent) {
-
-  }
-
 }
 
 object SeasonalTickHandler extends ITickHandler {
