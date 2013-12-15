@@ -4,20 +4,9 @@ import org.scalatest._
 import k2b6s9j.Seasons.months._
 import org.junit.runner.RunWith
 import org.scalatest.junit.JUnitRunner
-import k2b6s9j.Seasons.traits.Month
 
 @RunWith(classOf[JUnitRunner])
 class MonthTest extends FlatSpec with Matchers {
-
-  def traitMonth: Month = traitMonth
-
-  "The Trait Month" should "have no days" in {
-    traitMonth.daysInMonth should be (0)
-  }
-
-  it should "last zero ticks." in {
-    January.ticksInMonth should be (0)
-  }
 
   "January" should "have 31 days." in {
     January.daysInMonth should be (31)
