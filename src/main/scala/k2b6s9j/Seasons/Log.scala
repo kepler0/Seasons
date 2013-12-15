@@ -7,22 +7,22 @@ object Log {
 
   def log: Logger = Logger.getLogger("Seasons")
 
-  def info(msg:String) {
+  def info(msg: String) {
     log.setParent(FMLLog.getLogger)
     log.log(Level.INFO, msg)
   }
 
-  def warning(msg:String) {
+  def warning(msg: String) {
     log.setParent(FMLLog.getLogger)
     log.log(Level.WARNING, msg)
   }
 
-  def severe(msg:String) {
+  def severe(msg: String) {
     log.setParent(FMLLog.getLogger)
     log.log(Level.SEVERE, msg)
   }
 
-  def getLogger()  {
+  def getLogger() {
     log.setParent(FMLLog.getLogger)
     log
   }
