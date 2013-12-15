@@ -8,8 +8,8 @@ import org.scalatest.{Matchers, FlatSpec}
 @RunWith(classOf[JUnitRunner])
 class TimeManagerTest extends FlatSpec with Matchers {
 
-  "A year" should "last 8,016,000 ticks." in {
-    TimeManager.ticksInYear() should be (8016000)
+  "A year" should "last 8,760,000 ticks." in {
+    TimeManager.ticksInYear() should be (8760000)
   }
 
 }
