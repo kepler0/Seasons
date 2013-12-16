@@ -15,16 +15,20 @@ object TimeManager {
     }
     else {
       val month:Int = totalTicks/ticksInYear()
-      Log.info(month.toString)
-      /*
-      if (checkDivisibility(totalTicks, 2)) {
-
+      month match {
+        case month <1 => January
+        case month >1<2 => February
+        case month >2<3 => March
+        case month >3<4 => April
+        case month >4<5 => May
+        case month >5<6 => June
+        case month >6<7 => July
+        case month >7<8 => August
+        case month >8<9 => September
+        case month >9<10 => October
+        case month >10<11 => November
+        case month >11<12 => December
       }
-      else {
-        January
-      }
-      */
-      January
     }
   }
 
